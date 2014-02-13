@@ -7,3 +7,5 @@ Initialize the game with `Memory.init`, which takes an optional object of option
 * `level` [optional, default=5] is the number of different symbols
 
 `rows * cols` must be an even number or the game will throw an error.
+
+You can have hours of fun with [the online demo](http://flappymemory.s3-website-eu-west-1.amazonaws.com/).
