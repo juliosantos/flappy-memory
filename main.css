@@ -1,0 +1,75 @@
+html, body {
+  background-color: #E0E4CC;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#game table {
+  opacity: 0;
+  margin: 0 auto;
+}
+#game table.shown {
+  opacity: 1;
+  transition: 0.8s;
+  transition-timing-function: ease;
+}
+
+#game table td {
+  transition: 0.2s;
+
+  cursor: pointer;
+  width: 100px;
+  padding: 2px;
+  text-align: center;
+  background-color: #F38630;
+  border: 2px solid #E0E4CC;
+}
+#game table td:hover {
+  transition: 0.2s;
+
+  background-color: #FA6900;
+}
+
+#game table td a {
+  opacity: 0;
+  display: none;
+  color: #E0E4CC;
+}
+#game table td a:hover {
+  color: #E0E4CC;
+  text-decoration: none;
+}
+
+#game table td.open {
+  background-color: #FA6900;
+  position: relative;
+}
+#game table td.open a {
+  transition: 0.2s;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#game table td.open a i {
+  display: block;
+}
+
+#game table td.matched {
+  transition: 0.4s;
+  transition-timing-function: ease;
+
+  background-color: #E0E4CC;
+  cursor: default;
+}
+#game td.matched a {
+  display: none;
+}
+
